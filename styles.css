@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgba(148, 255, 41, 0.842);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.calculadora{
+    width: 100%;
+    height: 70vh;
+    background: black;
+    border-radius: 25px;
+    padding: 15px;
+}
+.pantalla{
+    width: 100%;
+    height: 80px;
+    background: cyan;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 50px;
+    font-family: 'Qahiri', sans-serif;
+}
+.btn-container{
+    margin-top: 20px;
+    height: 70%;
+    width: 100%;
+    color: white;
+}
+.boton{
+    padding: 5px;
+    height: 70px;
+    border: white 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 25px;
+}
+.boton:hover{
+    background: rgba(255, 255, 0, 0.603);
+}
+@media (min-width:1024px) {
+    .calculadora{
+        width: 50%;
+    }
+}
