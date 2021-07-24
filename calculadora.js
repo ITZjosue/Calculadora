@@ -2,18 +2,18 @@ let pantalla = document.querySelector('.pantalla');
 let botones = document.querySelectorAll('.boton');
 
 botones.forEach(boton => boton.addEventListener('click',()=>{
-    let caca = boton.textContent;
+    let ca = boton.textContent;
     let p  = document.createElement('p');
-    if(caca !== 'AC' && caca!=='Del' && caca!== '='){
-        p.textContent += `${caca}`;
+    if(ca !== 'AC' && ca!=='Del' && ca!== '='){
+        p.textContent += `${ca}`;
         pantalla.appendChild(p);
-    }else if(caca == 'AC'){
+    }else if(ca == 'AC'){
         pantalla.innerHTML = '';
     }
-    else if(caca == 'Del'){
+    else if(ca == 'Del'){
         pantalla.removeChild(pantalla.lastChild);
     }
-    else if(caca == '='){
+    else if(ca == '='){
         let operar = pantalla.textContent;
         pantalla.textContent = eval(operar);
     }
